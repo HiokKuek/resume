@@ -39,12 +39,12 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% Adjust margins - tighter for single page
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
 
@@ -134,11 +134,13 @@
       {Aug 2024 -- Aug 2025}{}
       \resumeItemListStart
       \vspace{-4mm}
-        \resumeItem{Designed and deployed a scalable \textbf{URL Phishing Detection API} on \textbf{AWS}, utilizing \textbf{EC2}, \textbf{Auto Scaling Groups}, \textbf{Application Load Balancer}, and \textbf{Route 53}; adopted by over \textbf{10,000 users}.}
-        \resumeItem{Co-authored a research paper on phishing detection, accepted at the \textbf{World Wide Web Conference 2025}.}
-        \resumeItem{Migrated AWS infrastructure to \textbf{Terraform}, enhancing code maintainability and reducing deployment time by \textbf{30\%}.}
-        \resumeItem{Developed interactive dashboards with \textbf{Next.js} for algorithm visualization, leveraging \textbf{Redux}, \textbf{Tailwind CSS}, \textbf{ShadCN}, \textbf{GraphViz}, and \textbf{D3.js}.}
-        \resumeItem{Engineered phishing detection algorithms using \textbf{Python} and \textbf{Scikit-learn}, achieving over \textbf{95\% accuracy} on real-world datasets.}
+        \resumeItem{Independently designed \textbf{architecture} of a phishing detection API adopted by \textbf{10,000 users}, focusing on \textbf{high concurrency} and \textbf{security}.}
+          \resumeItem{Implemented a \textbf{scalable system} using \textbf{cloudwatch metrics} and \textbf{load balancer}, reduced cost by \textbf{40\%}.}
+          \resumeItem{Migrated above-mentioned AWS infrastructure to \textbf{Terraform} to ensure code maintainability.}
+          \resumeItem{Efforts above contributed to the publication of \href{https://arxiv.org/abs/2412.09057}{\underline{\textcolor{blue}{PhishIntel}}}, accepted at the \textbf{World Wide Web Conference 2025}.}
+          \resumeItem{Fine-tuned \href{https://huggingface.co/KingNerdy/distilbert-email-classifier}{\underline{\textcolor{blue}{distilBERT classifier}}} to more accurately detect phishing emails using recent datasets.}
+          \resumeItem{Built a native, \textbf{on-premise} application that detects phishing emails using the classifier above and explained using local LLM through \textbf{llamacpp}, bundled with \textbf{PyInstaller} to support both \textbf{CPU} and \textbf{CUDA GPU} backend.}
+          \resumeItem{Developed an \textbf{agentic pipeline} to improve \textbf{email phishing detection} using \textbf{weighted feedback} from email attributes, classifier, LIME explanations and LLM insight with an end-to-end time of \textbf{2 seconds}.}
     
       \resumeItemListEnd
       
@@ -174,8 +176,9 @@
       {Dec 2024}{}
       \resumeItemListStart
       \vspace{-4mm}
-        \resumeItem{Repurposed an old laptop into a Network Attached Storage because I refuse to pay for cloud storage.}
-        \resumeItem{Host dockerised applications that were exposed through port forwarding.}
+        \resumeItem{Repurposed an old laptop into a Home Server with OpenMediaVault.} 
+        \resumeItem{Configured file sharing with SMB for seamless access across devices.} 
+        \resumeItem{Configured cloudflare tunnels to remotely access dockerised applications.}
         \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -195,6 +198,7 @@
   \textbf{CS1101S}: Programing Methodology & \textbf{CS2030S}: Programing Methodology II \\
   \textbf{CS1231S}: Discrete Structures & \textbf{CS2040S}: Data Structures and Algorithms \\
   \textbf{CS2100}: Computer Organisation & \textbf{CS2103T}: Software Engineering \\
+  \textbf{CS3210}: Parallel Computing (Planning to take)& \textbf{CS2109S}: Intro to AI \& ML (Planning to take)\\
 \end{tabularx}
 
 %-----------SKILLS & INTERESTS-----------
@@ -202,13 +206,13 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
     \vspace{1mm}
-    \textbf{Languages \& Frameworks}{: Python {\bfseries\large$\cdot$} Java {\bfseries\large$\cdot$} JavaScript/TypeScript {\bfseries\large$\cdot$} Next.js {\bfseries\large$\cdot$} React {\bfseries\large$\cdot$} Flask} \\
+    \textbf{Languages \& Frameworks}{: Python {\bfseries\large$\cdot$} Java {\bfseries\large$\cdot$} pandas {\bfseries\large$\cdot$} NumPy{\bfseries\large$\cdot$} PyTorch {\bfseries\large$\cdot$} Flask} \\
     \vspace{1mm}
-    \textbf{APIs \& Tools}{: AWS (Certified Solution Architect) {\bfseries\large$\cdot$} OAuth2 {\bfseries\large$\cdot$} Auth0 {\bfseries\large$\cdot$} Microsoft Graph API {\bfseries\large$\cdot$} Docker {\bfseries\large$\cdot$} Git {\bfseries\large$\cdot$} Hugging Face {\bfseries\large$\cdot$} ECharts {\bfseries\large$\cdot$} D3.js} \\
+    \textbf{APIs \& Tools}{: Docker {\bfseries\large$\cdot$} Git {\bfseries\large$\cdot$} Hugging Face } \\
     \vspace{1mm}
-    \textbf{Specialties}{: Browser extensions {\bfseries\large$\cdot$} Web app development {\bfseries\large$\cdot$} Phishing \& typosquatting detection {\bfseries\large$\cdot$} Data visualization} \\
+    \textbf{Certifications}{: \href{https://www.credly.com/badges/bdd6f6cb-d507-41a4-954f-b4cfb2d3a049/public_url}{\underline{\textcolor{blue}{AWS Certified Solutions Architect - Associate (SAA-C03)}}}} \\
     \vspace{1mm}
-    \textbf{Interests}{: Applied AI \& cybersecurity {\bfseries\large$\cdot$} Interactive web development {\bfseries\large$\cdot$} Data storytelling {\bfseries\large$\cdot$} Photography} \\
+    \textbf{Interests}{: Applied AI {\bfseries\large$\cdot$} Machine Learning {\bfseries\large$\cdot$} Performance Optimisation{\bfseries\large$\cdot$} Full-Stack Development} \\
     }}
  \end{itemize}
  \begin{center}
